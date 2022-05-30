@@ -1,0 +1,160 @@
+table,
+table td,
+table th {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+input {
+    width: 99%;
+}
+
+#taahhutBasDiv {
+    width: 100%;
+
+    background-color: orange;
+}
+
+#taahhutDetayDiv {
+    width: 100%;
+
+    background-color: bisque;
+}
+
+#taahhutSonDiv {
+    width: 100%;
+
+    background-color: cadetblue;
+}
+
+
+
+#content {
+    height: 100%;
+    margin-left: 10%;
+}
+
+#sidebar {
+    height: 100%;
+    width: 10%;
+    background-color: yellow;
+    margin: 0;
+    position: fixed;
+
+}
+
+.yukleniyor {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    padding: 0%;
+    animation-name: yukleniyor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.menu-firma {
+    display: block;
+    margin-top: 5px;
+}
+
+.eklentiDiv {
+    position: absolute;
+    top: 60%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 25%;
+    width: 100%;
+    background-color: coral;
+    color: white;
+}
+
+.div0 {
+    width: 40%;
+    position: absolute;
+    height: 99%;
+    border: solid blueviolet 1px;
+    overflow: auto;
+}
+
+.div1 {
+    width: 30%;
+    border: solid blueviolet 1px;
+    position: fixed;
+    height: 99%;
+    margin-left: 40%;
+}
+
+.sozlesmeDiv {
+    width: 20%;
+    margin-left: 70%;
+    height: 99%;
+    border: solid blueviolet 1px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes yukleniyor {
+    from {
+        margin-left: 0%;
+        width: 0%;
+    }
+
+    to {
+        margin-left: 50%;
+        width: 50%;
+    }
+}
+
+
+@media print {
+    .noShow {
+        display: none;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .asdasd {
+        width: 10%;
+        height: 10%;
+        background-color: red;
+    }
+
+    #taahhutBasDiv {
+        width: 100%;
+
+        background-color: turquoise;
+    }
+
+    #taahhutDetayDiv {
+        width: 100%;
+
+        background-color: crimson;
+    }
+
+    #taahhutSonDiv {
+        width: 100%;
+
+        background-color: dodgerblue;
+    }
+
+    #content {
+        height: 100%;
+        margin-left: 0%;
+    }
+
+    body {
+        margin: 0;
+    }
+}
